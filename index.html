@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>🔒 Locked with Love</h1>
+        <p>Enter the 4-digit code to enter:</p>
+        
+        <input type="password" id="passInput" maxlength="4" placeholder="0000" 
+               style="padding: 10px; font-size: 1.2rem; width: 80px; text-align: center; border-radius: 8px; border: 1px solid #ddd;">
+        <br>
+        
+        <button onclick="checkPassword()" class="btn">Click Me!</button>
+        <p id="error" style="color: red; font-size: 0.8rem; margin-top: 10px; display: none;">Wrong code! Hint: Try 1234</p>
+
+        <audio id="bgMusic" loop>
+            <source src="birthday_song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const code = document.getElementById('passInput').value;
+            const music = document.getElementById('bgMusic');
+            const error = document.getElementById('error');
+
+            // Set your 4-digit password here (Example: 1234)
+            if (code === "1234") {
+                // Play music and save state so it keeps playing on other pages
+                music.play();
+                localStorage.setItem('musicPlaying', 'true');
+                
+                // Redirect after a tiny delay to ensure music starts
+                setTimeout(() => {
+                    window.location.href = "messages.html";
+                }, 500);
+            } else {
+                error.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
