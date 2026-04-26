@@ -1,0 +1,20 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Messages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>🎉 Happy Birthday! 🎉</h2>
+        <div class="messages">
+            <p>"Hope you have the best day ever!" - Friend A</p>
+            <p>"To many more years of greatness!" - Friend B</p>
+            <p>"Keep shining!" - Family</p>
+        </div>
+        <br>
+        <a href="photos.html" class="btn">See our memories →</a>
+    </div>
+</body>
+</html>
