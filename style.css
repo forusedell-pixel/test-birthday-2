@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 90%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e91e63;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #c2185b;
+    transform: translateY(-3px);
+}
+
+.messages p {
+    font-style: italic;
+    color: #555;
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+}
